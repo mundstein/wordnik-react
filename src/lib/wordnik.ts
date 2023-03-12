@@ -15,7 +15,7 @@ export async function getWord(rnd = false) {
   const res = await fetch(url + key + date);
   if (res.status == 200) {
     return res.json();
-  } else if (res.status == 204) {
+      } else if (res.status == 204) {
     throw new Error(`No content. Perhaps date out of range.`);
   } else {
     throw new Error(`Network error. ${res.status}`);

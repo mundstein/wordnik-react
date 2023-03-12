@@ -38,8 +38,10 @@ export default function App() {
   async function fetchWord(rnd = false) {
     setAppState({ loading: true });
     from(getWord(rnd)).subscribe({
-      next: (res) =>
-        setAppState({ word: res as Word, error: undefined, loading: false }),
+      next: (res) => {
+        // console.log(res)
+        setAppState({ word: res as Word, error: undefined, loading: false })
+      },
       error: (err) => setAppState({ word: undefined, error: err, loading: false }),
     });
   }

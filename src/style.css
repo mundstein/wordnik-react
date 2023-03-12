@@ -8,16 +8,12 @@ p {
 }
 
 h1 {
-  color: turquoise;
+  color: darkorange;
 }
 
 #word {
   font-size: 200%;
   margin-top: 70px;
-}
-
-#definition {
-  color: darkgray;
 }
 
 #entry {
@@ -28,14 +24,23 @@ h1 {
 
 .part-of-speech {
   font-style: italic;
+  color: darkgray;
 }
 
 .date {
-  color: turquoise;
+  color: darkorange;
   font-size: 80%;
 }
 
 pre {
   padding: 20px;
   color: red;
+}
+
+.exampleTitle {
+  font-style: italic;
+}
+
+a.source {
+  color: darkgray;
 }
