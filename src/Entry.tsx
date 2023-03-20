@@ -27,7 +27,7 @@ export default function Entry(props: any) {
           return (
             <p key={idx}>
               {e.text}{' '}
-              <span className="exampleTitle">{e.title}</span>
+              <span className="exampleTitle">{e.title}</span>&nbsp;
               {renderSource(e)}
             </p>
           );
@@ -40,7 +40,7 @@ export default function Entry(props: any) {
 
 function renderSource(example: any) {
   const FRAGMENT = "http://api.wordnik.com/v4/mid";
-  if (example.url != undefined && example.url.includes(FRAGMENT)) {
+  if (example.url == undefined || example.url.includes(FRAGMENT)) {
     return 
   }
   else {

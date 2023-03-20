@@ -32,7 +32,7 @@ h1 {
   font-size: 80%;
 }
 
-pre {
+pre.error {
   padding: 20px;
   color: red;
 }
@@ -43,4 +43,13 @@ pre {
 
 a.source {
   color: darkgray;
+}
+
+.spinner {
+  margin-top: 20px;
+  color: darkorange;
+}
+
+.actionButton {
+  margin: 15px;
 }
