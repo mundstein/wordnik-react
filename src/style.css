@@ -53,3 +53,7 @@ a.source {
 .actionButton {
   margin: 15px;
 }
+
+.wordnikLink {
+  color: darkorange;
+}

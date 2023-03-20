@@ -33,7 +33,17 @@ export default function Entry(props: any) {
           );
         })}
       </div>
-      <p className="date">Word of the Day {w.publishDate.substring(0, 10)}</p>
+      <p>
+        <span className="date">#
+          Word of the Day {w.publishDate.substring(0, 10)} {' '}
+        </span>
+        <a 
+          className="wordnikLink" 
+          href={'https://wordnik.com/words/' + w.word} 
+          target="_blank">
+            View on Wordnik.
+        </a>
+      </p>
     </div>
   );
 }
